@@ -12,7 +12,7 @@
 - `npx hardhat run scripts/delegate.js --network neondevnet` - Sample command of deploying the proxy contract on Neon Devnet network.
 - `npx hardhat verify --network neondevnet <CONTRACT_ADDRESS>` - Sample command of verifying a contract deployed on Neon Devnet network. `<CONTRACT_ADDRESS>` parameter has to be replaced with the smart contract address.
 
-#### Before starting make sure to create .env file containing the following data ( make a copy of .env.example file and rename it to .env ):
+#### Before starting make sure to create .env file containing the following data:
 
 ```
     PRIVATE_KEY_OWNER=XYZ
