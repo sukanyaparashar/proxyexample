@@ -5,7 +5,8 @@ require("dotenv").config();
 module.exports = {
   solidity: "0.8.21",
   etherscan: {
-    apiKey: {
+    apiKey: "4EZ2NNWK8WPYZGHNFY366DV1D2M4AU3DWR", // Your Etherscan API key
+    /*apiKey: {
       neonevm: "test",
     },
     customChains: [
@@ -25,7 +26,7 @@ module.exports = {
           browserURL: "https://neonscan.org",
         },
       },
-    ],
+    ],*/
   },
   networks: {
     neondevnet: {
@@ -45,6 +46,11 @@ module.exports = {
       gas: "auto",
       gasPrice: "auto",
       isFork: true,
+    },
+    goerli: {
+      chainId: 5,
+      url: "https://goerli.infura.io/v3/033d199b81f74943815900888aa751d7",
+      accounts: [process.env.PRIVATE_KEY_OWNER],
     },
   },
 };

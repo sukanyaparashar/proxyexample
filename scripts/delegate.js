@@ -7,7 +7,7 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const implementationAddress = "0x53449EB72DA61CAEcb98f7267c11c2f6e0CE5d3B"; // !!! paste here your deployed smart contract address !!!
+  const implementationAddress = "0x37b4989BE87d5cE29d63154332E72789589564c6"; // !!! paste here your deployed smart contract address !!!
 
   // Deploying the minimal proxy
   const MinimalProxy = await ethers.getContractFactory("MinimalProxy");
