@@ -2,13 +2,14 @@
 
 ### Steps to install:
 
-- `git clone `
+- `git clone https://github.com/sukanyaparashar/proxyexample.git`
+- `npm install` - Download required packages.
 
-- `npm install` - Downloading required packages.
+### Deployment commands:
 
-### Deployment terminal commands:
-
-- `npx hardhat run scripts/TestERC20/deploy.js --network neondevnet` - Sample command of deploying `contracts/TestERC20/TestERC20.sol` on Neon Devnet network. If you wish to deploy on Neon Mainnet then change the `--network` parameter to `neonmainnet`.
+- `npx hardhat run scripts/deploy.js --network neondevnet` - Sample command of deploying `contracts/Implementation.sol` on Neon Devnet network. If you wish to deploy on Neon Mainnet then change the `--network` parameter to `neonmainnet`.
+- Replace the address you get from the previous step in the "delegate.js" file.
+- `npx hardhat run scripts/delegate.js --network neondevnet` - Sample command of deploying the proxy contract on Neon Devnet network.
 - `npx hardhat verify --network neondevnet <CONTRACT_ADDRESS>` - Sample command of verifying a contract deployed on Neon Devnet network. `<CONTRACT_ADDRESS>` parameter has to be replaced with the smart contract address.
 
 #### Before starting make sure to create .env file containing the following data ( make a copy of .env.example file and rename it to .env ):
